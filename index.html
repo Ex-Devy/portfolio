@@ -1,141 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Roblox Studio Scripts</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #005bb5;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .section {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            color: #005bb5;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #005bb5;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | Bueno - Ebook sobre Investimentos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #0d47a1;
+    }
+    .ebook-cover {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .ebook-cover img {
+      max-width: 300px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #0d47a1;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+      font-size: 1.1rem;
+    }
+    .button:hover {
+      background: #08306b;
+    }
+    .price {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+    .sample {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Free Roblox Studio Scripts</h1>
-        <p>Explore a variety of free scripts to use in your Roblox games!</p>
-    </header>
 
-    <nav>
-        <a href="#basics">Basic Scripts</a>
-        <a href="#gameplay">Gameplay Enhancements</a>
-        <a href="#ui">UI Scripts</a>
-        <a href="#tools">Developer Tools</a>
-    </nav>
+  <header>
+    <h1>Bueno • Portfólio</h1>
+    <p>Educador financeiro | Autor do eBook "Investir em Ações em 2025"</p>
+  </header>
 
-    <div class="container">
-        <section id="basics" class="section">
-            <h2>Basic Scripts</h2>
-            <p>Simple scripts to get you started with Roblox Studio.</p>
-            <pre>
--- Basic Kill Script
-local part = script.Parent
-part.Touched:Connect(function(hit)
-    local character = hit.Parent
-    local humanoid = character:FindFirstChild("Humanoid")
-    if humanoid then
-        humanoid.Health = 0
-    end
-end)
-            </pre>
-        </section>
+  <section>
+    <h2>📘 Meu eBook: Investir em Ações em 2025</h2>
+    <p>
+      Aprenda a investir com segurança no cenário econômico de 2025! Este guia prático ensina tudo o que você precisa saber para começar no mercado de ações mesmo com juros altos e incertezas no mercado.
+    </p>
 
-        <section id="gameplay" class="section">
-            <h2>Gameplay Enhancements</h2>
-            <p>Enhance the gameplay experience with these scripts.</p>
-            <pre>
--- Speed Boost Script
-local player = game.Players.LocalPlayer
-player.CharacterAdded:Connect(function(character)
-    local humanoid = character:WaitForChild("Humanoid")
-    humanoid.WalkSpeed = 32
-end)
-            </pre>
-        </section>
-
-        <section id="ui" class="section">
-            <h2>UI Scripts</h2>
-            <p>Create interactive and dynamic user interfaces.</p>
-            <pre>
--- Button Click Script
-local button = script.Parent
-button.MouseButton1Click:Connect(function()
-    print("Button clicked!")
-end)
-            </pre>
-        </section>
-
-        <section id="tools" class="section">
-            <h2>Developer Tools</h2>
-            <p>Useful tools for debugging and development.</p>
-            <pre>
--- Output Logger
-local function log(message)
-    print("[LOG]: " .. message)
-end
-log("Script initialized")
-            </pre>
-        </section>
+    <div class="ebook-cover">
+      <img src="https://via.placeholder.com/300x420?text=EBOOK+COVER" alt="Capa do ebook">
+      <div class="price">Por apenas R$29,90</div>
+      <a href="https://SEU-LINK-KIWIFY-AQUI.com" class="button" target="_blank">
+        📘 Comprar Agora
+      </a>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Free Roblox Scripts. All Rights Reserved.</p>
-    </footer>
+    <h2>👀 Amostra Gratuita</h2>
+    <div class="sample">
+      <h3>Introdução:</h3>
+      <p>
+        Este guia prático foi cuidadosamente elaborado para orientar novos investidores no dinâmico mercado de ações brasileiro em 2025. Abordamos os desafios do cenário atual com estratégias simples e eficazes.
+      </p>
+      <h3>Fundamentos do Mercado:</h3>
+      <p>
+        Ações representam frações de empresas. Ao comprar, você vira sócio — com potencial de lucros (ou perdas). Neste eBook, explicamos como tudo funciona com linguagem acessível e exemplos reais.
+      </p>
+      <h3>Destaques de 2025:</h3>
+      <p>
+        Setores como agronegócio, energia e alimentos se mostram promissores. O uso de inteligência artificial, análise de dados e investimentos ESG também está transformando a forma de investir.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>📩 Contato</h2>
+    <p>Quer tirar dúvidas ou fazer parcerias? Entre em contato por e-mail:</p>
+    <p><strong>contato@seuemail.com</strong></p>
+  </section>
+
+  <footer>
+    © 2025 Bueno. Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
